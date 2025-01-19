@@ -55,8 +55,8 @@ if (loaded) {
             <section>
                 <h1>What word do you want to look up?</h1>
               <form onSubmit={handleSubmit}>
-                  <input type="search" onChange={handleKeywordChange} defaultValue={props.defaultKeyword} autoFocus={true} />
-                  <input type="submit" value="Search" />
+                  <input className="searchBar" type="search" onChange={handleKeywordChange} defaultValue={props.defaultKeyword} autoFocus={true} />
+                  <input className="submitButton" type="submit" value="Search" />
               </form>
               <div className="hint">
                  e.g., <em>euphoria, incandescent, serendipity, wanderlust...</em>
